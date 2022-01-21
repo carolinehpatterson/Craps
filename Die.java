@@ -1,13 +1,12 @@
 
 /**
- * Write a description of class Die here.
+ * This class simulates a Die
  *
  * @author Caroline Patterson
  * @version (a version number or a date)
  */
 public class Die
 {
-    // instance variables - replace the example below with your own
     private int roll;
 
     /**
@@ -16,16 +15,15 @@ public class Die
     public Die()
     {
         // initialise instance variables
-        roll = rollDie();
+        roll = roll();
     }
 
     /**
-     * An example of a method - replace this comment with your own
+     * The roll method rolls the six-sided die
      *
-     * @param  y  a sample parameter for a method
-     * @return    the sum of x and y
+     * @return    the value of the die roll, an integer 1-6 inclusive
      */
-    public int rollDie()
+    public int roll()
     {
         // put your code here
         roll = (int) (Math.random() * 6 + 1);
